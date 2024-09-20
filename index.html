@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        /* CSS inline para simplificação */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #pokemon {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .pokemon-card {
+            display: inline-block;
+            width: 150px;
+            text-align: center;
+            margin: 10px;
+        }
+        #info img {
+            max-width: 100px;
+        }
+        #pokemonButtons {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pokemon">
+        <h1>Pokémon Info</h1>
+        <input type="text" id="pokemonInput" placeholder="Digite o Pokémon ou o ID" />
+        <button onclick="buscaPokemon()">Procura Pokémon</button>
+        <div id="pokemonButtons">
+            <button onclick="anteriorPokemon()">Voltar</button>
+            <button onclick="proximoPokemon()">Avançar</button>
+        </div>
+        <div id="info"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
